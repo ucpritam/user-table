@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Rohit Agarwal",
+    "email": "abc@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Harsh Sinha",
+    "email": "amc@gmail.com"
+  },
+  {
+    "id": 3,
+    "name": "Pooja Sen",
+    "email": "sbc@gmail.com"
+  },
+  {
+    "id": 4,
+    "name": "Souvik Das",
+    "email": "kdg@gmail.com"
+  },
+  {
+    "id": 5,
+    "name": "Pooja Sen",
+    "email": "sbc@gmail.com"
+  },
+  {
+    "id": 6,
+    "name": "Arijit Debnath",
+    "email": "mns@gmail.com"
+  },
+  {
+    "id": 7,
+    "name": "Sayan Roy",
+    "email": "ppc@gmail.com"
+  },
+  {
+    "id": 8,
+    "name": "Manisha Kaur",
+    "email": "dgc@gmail.com"
+  },
+  {
+    "id": 9,
+    "name": "Tanusri Paul",
+    "email": "hnc@gmail.com"
+  },
+  {
+    "id": 10,
+    "name": "Debopam Das",
+    "email": "mkc@gmail.com"
+  }
+]
