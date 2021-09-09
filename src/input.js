@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
-import SingleUser from "./single-user";
-import Data from "./data.json";
+import history from "./history";
 
 const useStyles = makeStyles((theme) => ({
   input: {
@@ -18,26 +17,15 @@ const useStyles = makeStyles((theme) => ({
 const Input = () => {
   const classes = useStyles();
   var [data, setData] = React.useState(1);
-  const [print, setPrint] = React.useState(false);
-
-  var size = Data.length;
 
   function getData(val) {
     if (data == "") data = 1;
     setData(val.target.value);
   }
 
-  useEffect(() => {
-    checkInput();
-  });
-
-  const checkInput = () => {
-    console.log(data);
-    console.log(print);
-    if (data != "" && print != false) {
-      return <SingleUser id={data} size={size} />;
-    }
-  };
+  function checkInput() {
+    history.push(data);
+  }
 
   return (
     <div>
@@ -54,13 +42,11 @@ const Input = () => {
           className={classes.button}
           variant="contained"
           color="secondary"
-          onClick={() => setPrint(true)}
+          onClick={checkInput}
         >
           Submit
         </Button>
       </div>
-
-      {/* {checkInput()} */}
     </div>
   );
 };
